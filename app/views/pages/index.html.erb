@@ -1,0 +1,48 @@
+
+<!-- if the flash notice is not blank, then out the div and the notice -->
+<% if !flash[:notice].blank? %>
+  <div class="notice">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+
+<div class="pages-index">
+  <h2>Pages</h2>
+
+  <%= link_to("Add new Page", {:action => 'new'}, :class => 'action new') %>
+  <table class="listing" summary = "Page list">
+    <tr class="header">
+      <th>Page Id</th>
+      <th>Subject Id</th>
+      <th>Page Name</th>
+      <th>Permalink</th>
+      <th>Position</th>
+      <th>Visible</th>
+      <th>Action</th>
+    </tr>
+
+  <% @pages.each do |page| %>
+  <tr>
+
+    <td><%= page.id %></td>
+    <td><%= page.subject_id%></td>
+    <td><%= page.name %></td>
+    <td><%= page.permalink %></td>
+    <td><%= page.position %></td>
+    <td class="center"><%= page.visible ? 'Yes' : 'No'%></td>
+
+
+    <!-- defines the number of subjects in the pages table -->
+    <td class="actions">
+      <!-- specify the route and class action to show an corresponding record from the db -->
+      <%= link_to("Show", {:action => 'show', :id => page.id}, :class => 'action show')%>
+
+      <!-- specify the route and class action to edit a corresponding record from the db -->
+      <%= link_to("Edit", {:action => 'edit', :id => page.id}, :class => 'action edit')%>
+
+      <%= link_to("Delete", {:action => 'delete', :id => page.id}, :class => 'action delete')%>
+    </td>
+  </tr>
+  <% end %>
+  </table>
+</div>
