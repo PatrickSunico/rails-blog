@@ -1,2 +1,51 @@
-<h1>Sections#index</h1>
-<p>Find me in app/views/sections/index.html.erb</p>
+
+<!-- if the flash notice is not blank, then out the div and the notice -->
+<% @page_title = "Sections" %>
+
+<div class="sections-index">
+  <h2>Sections</h2>
+  <ul>
+    <li><h2><%= link_to("Subjects Page", {:controller => "subjects"}, :class => "subjects-link")%></h2></li>
+    <li><h2><%= link_to("Pages Page", {:controller => "pages"}, :class => "pages-link")%></h2></li>
+  </ul>
+
+  <%= link_to("Add new Section", {:action => 'new'}, :class => 'action new') %>
+  <table class="listing" summary = "Page list">
+    <tr class="header">
+      <th>Section Id</th>
+      <th>Page Id(FK)</th>
+      <th>Page Name</th>
+      <th>Position</th>
+      <th>Visible</th>
+      <th>Content type</th>
+      <th>Content</th>
+      <th>Actions</th>
+    </tr>
+
+  <% @sections.each do |section| %>
+  <tr>
+
+    <td><%= section.id %></td>
+    <td><%= section.page_id %></td>
+    <td><%= section.name %></td>
+    <td><%= section.position %></td>
+    <td class="center"><%= status_tag(section.visible)%></td>
+    <td><%= section.content_type %></td>
+    <td><%= section.content %></td>
+
+
+
+    <!-- defines the number of subjects in the pages table -->
+    <td class="actions">
+      <!-- specify the route and class action to show an corresponding record from the db -->
+      <%= link_to("Show", {:action => 'show', :id => section.id}, :class => 'action show')%>
+
+      <!-- specify the route and class action to edit a corresponding record from the db -->
+      <%= link_to("Edit", {:action => 'edit', :id => section.id}, :class => 'action edit')%>
+
+      <%= link_to("Delete", {:action => 'delete', :id => section.id}, :class => 'action delete')%>
+    </td>
+  </tr>
+  <% end %>
+  </table>
+</div>

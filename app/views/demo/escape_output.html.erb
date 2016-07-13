@@ -1,0 +1,41 @@
+<% evil_string = "<script>alert('Gotcha!');</script>" %>
+<% good_string = "<strong> Welcome to my site </strong>" %>
+
+<!-- By default rails detects the script tags and html tags and refuses to render these strings -->
+<!-- renders them as normal strings -->
+<%= evil_string %> <br>
+<%= good_string %> <br>
+
+<!-- processes the strings defined as normal html string (Caution) -->
+<!-- renders the strings as html -->
+<%= raw(evil_string) %> <br>
+<%= raw(good_string) %> <br>
+
+<!-- forces all of the html as safe -->
+<%= evil_string.html_safe %> <br>
+<%= evil_string.html_safe %> <br>
+
+
+<!-- checks if the strings are safe -->
+<!-- returns true if safe, returns false if not safe -->
+<%= evil_string.html_safe? %> <br>
+<%= good_string.html_safe? %> <br>
+
+<!-- checks the string if there any containing links or tags then strips them with the strip_links and strip_tag helper methods-->
+<% simple_string = '<strong> Please </strong> visit <a href="http://example.com"> us </a>'%>
+
+<%= strip_tags(simple_string) %> <br>
+<%= strip_links(simple_string) %> <br>
+
+
+<!-- sanitize -->
+
+<h2>Sanitize</h2>
+<!-- by default sanitize will just remove javascript only -->
+<%= sanitize(evil_string) %> <br>
+
+<!-- However if we specify a tags key or an attributes key we can specify which tags and attributes are available to be rendered for the view or be inserted into the db -->
+<%= sanitize(simple_string, :tags => ['strong', 'em', 'a']) %> <br>
+
+<!-- to specify no tags or links to whitelist just leave the tags as a blank array -->
+<%= sanitize(simple_string, :tags => []) %> <br>

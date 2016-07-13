@@ -32,16 +32,6 @@ ActiveRecord::Schema.define(version: 20160706100338) do
 
   add_index "admin_users_pages", ["admin_user_id", "page_id"], name: "index_admin_users_pages_on_admin_user_id_and_page_id", using: :btree
 
-  create_table "countries", force: :cascade do |t|
-    t.integer  "user_id",      limit: 4
-    t.string   "country_name", limit: 255
-    t.boolean  "visible",                  default: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "countries", ["user_id"], name: "index_countries_on_user_id", using: :btree
-
   create_table "pages", force: :cascade do |t|
     t.integer  "subject_id", limit: 4
     t.string   "name",       limit: 255

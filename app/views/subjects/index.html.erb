@@ -1,20 +1,24 @@
 
 <!-- if the flash notice is not blank, then out the div and the notice -->
-<% if !flash[:notice].blank? %>
-  <div class="notice">
-    <%= flash[:notice] %>
-  </div>
-<% end %>
 
+<% @page_title = "Subjects" %>
 <div class="subjects_index">
   <h2>Subjects</h2>
 
+  <ul>
+    <li><h2><%= link_to("Subjects Page", {:controller => "subjects"}, :class => "subjects-link")%></h2></li>
+    <li><h2><%= link_to("Pages Page", {:controller => "pages"}, :class => "pages-link")%></h2></li>
+    <li><h2><%= link_to("Sections Page", {:controller => "sections"}, :class => "sections-link")%></h2></li>
+  </ul>
   <!-- specify the route and class action to show the form to create a new subject -->
   <%= link_to("Add new Subject", {:action => 'new'}, :class => 'action new') %>
+  <!-- counts all of the current pages -->
+  <div><%= pluralize(@subjects.size, 'subject') %> found </div>
   <table class="listing" summary = "Subject list">
     <tr class="header">
-      <th>&nbsp;</th>
+      <th>Id</th>
       <th>Subject</th>
+      <th>Position</th>
       <th>Visible</th>
       <th>Pages</th>
       <th>Actions</th>
@@ -22,11 +26,13 @@
   <!-- do an for each to display the subject in a row like fashion -->
   <!-- @subjects the instance variable we defined in our controller -->
   <% @subjects.each do |subject| %>
-  <tr>
-    <td><%= subject.position %></td>
+  <tr class="<%=cycle('odd','even')%>"> <!--cycle through each td odd or even td.times-->
+    <td><%= subject.id%></td>
     <td><%= subject.name %></td>
-    <!-- Ternary operator, is subject visible yes, output yes or if subject.visible no, output no-->
-    <td class="center"><%= subject.visible ? 'Yes' : 'No'%></td>
+    <td><%= subject.position %></td>
+
+
+    <td class="center"><%= status_tag(subject.visible) %></td>
 
     <!-- defines the number of subjects in the pages table -->
     <td class="center"><%= subject.pages.size %></td>

@@ -1,23 +1,24 @@
 
 <!-- if the flash notice is not blank, then out the div and the notice -->
-<% if !flash[:notice].blank? %>
-  <div class="notice">
-    <%= flash[:notice] %>
-  </div>
-<% end %>
-
+<% @page_title = "Pages" %>
 <div class="pages-index">
   <h2>Pages</h2>
+  <ul>
+    <li><h2><%= link_to("Subjects Page", {:controller => "subjects"}, :class => "subjects-link")%></h2></li>
+    <li><h2><%= link_to("Pages Page", {:controller => "pages"}, :class => "pages-link")%></h2></li>
+    <li><h2><%= link_to("Sections Page", {:controller => "sections"}, :class => "sections-link")%></h2></li>
+  </ul>
 
   <%= link_to("Add new Page", {:action => 'new'}, :class => 'action new') %>
   <table class="listing" summary = "Page list">
     <tr class="header">
       <th>Page Id</th>
-      <th>Subject Id</th>
+      <th>Subject Id(FK)</th>
       <th>Page Name</th>
       <th>Permalink</th>
       <th>Position</th>
       <th>Visible</th>
+      <th>Number of Sections</th>
       <th>Action</th>
     </tr>
 
@@ -29,7 +30,8 @@
     <td><%= page.name %></td>
     <td><%= page.permalink %></td>
     <td><%= page.position %></td>
-    <td class="center"><%= page.visible ? 'Yes' : 'No'%></td>
+    <td class="center"><%= status_tag(page.visible)%></td>
+    <td><%= page.sections.size %></td>
 
 
     <!-- defines the number of subjects in the pages table -->

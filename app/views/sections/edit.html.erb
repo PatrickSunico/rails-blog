@@ -1,2 +1,15 @@
-<h1>Sections#edit</h1>
-<p>Find me in app/views/sections/edit.html.erb</p>
+<%= link_to("<< Back to List", {:action => "index"}, :class => "back-link") %>
+
+<div class="sections edit">
+  <h2>Update Section</h2>
+
+  <!-- Specify the action and the id to be updated at -->
+  <%= form_for(:section, :url => {:action => "update", :id => @section.id}) do |f| %>
+
+  <%= render(:partial => "subjects/partials/form", :locals => {:f => f}) %>
+    <div class="form-buttons">
+      <%= submit_tag("Update Section")%>
+    </div>
+
+  <% end %>
+</div>

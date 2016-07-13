@@ -1,0 +1,82 @@
+<%=
+  text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Sunt iusto obcaecati sequi ex ut, maiores totam corrupti unde est, \n\n quidem quia adipisci quasi natus beatae nihil, suscipit consequatur dolor culpa?"
+%>
+
+<!-- if the text variable exceeds 30 characters in length it appends a "\n" at the end -->
+<!-- However html does not respect "\n" so it won't be seen when we render the page -->
+<h2>Word Wrap</h2>
+<%= word_wrap(text, :line_width => 30) %>
+<hr/>
+
+<h2>Simple_format</h2>
+<h3><b> simple format respects line breaks, because for every "\n" it get's converted to <br> tags and every "\n\n" gets converted into a new paragraph line</b> </h3>
+<h3>Example: </h3>
+<%= simple_format(text)%>
+<hr/>
+
+<h2>simple_format + word_wrap</h2>
+
+<h3><b>A Mixture of both word_wrap and simple_format</b></h3>
+<h3><b> convert a single "\n" to br tags, convert double "\n\n" as a new paragraph line, <br> then if character length exceeds 30 break a new line </b></h3>
+<h4>Example</h4>
+<%= simple_format(word_wrap(text, :line_width => 30))%>
+<hr/>
+
+<h2>truncate</h2>
+<h3>if character length exceed 40 show a ... instead</h3>
+<h4>Example</h4>
+<%= truncate(text, :length => 40, :omission => "...")%>
+</hr>
+
+<h2>excerpt</h2>
+<h3>excerpt is the same as truncate but looks for a target word, When excerpt finds the target word it, <br> excerpt will snip out text 7 characters before the target word and 7 characters after the target word</h3>
+<h4>Example:</h4
+<%= excerpt(text, 'corrupti', :radius => 7, :omission => "...")%>
+</hr>
+
+
+<h2>highlight</h2>
+<h3>highlights the target text as specified within single quotes</h3>
+<h3>Example</h3>
+  <%= highlight(text, 'Lorem ipsum')%>
+<hr/>
+
+<!-- highlights the multiple target text inside of the array -->
+<h3>highlight with multiple target text inside of an array </h3>
+<%= highlight(text, ['consectetur', 'adipisicing'], :highlighter => '<em>\1</em>') %>
+<hr>
+
+
+<h2>pluralize</h2>
+<p>pluralize is helpful when were working with database tables</p>
+<p>It basically pluralizes a object variable from a singular noun to a plural noun</p>
+<p>This is extremely useful if were searching and querying something from a database and tell something to the user i.e "I found 1 product" or "You have 2 messages"</p>
+<%= "student".pluralize %> <!--students-->
+<%= "ox".pluralize %> <!-- oxen -->
+<br/>
+
+<%= pluralize(2, 'product')%> <br/> <!--2 products-->
+<br/>
+
+<% [0,1,20].each do |n| %>
+  <!-- if n = 0, stay singular -->
+  <!-- if n = 1, still singular -->
+  <!-- if n = 2 or more, pluralize -->
+  <ul>
+    <li><%= pluralize(n, 'product')%></li>
+    <li><%= pluralize(n, 'octopus')%></li>
+    <!-- predefined singular and plural form -->
+    <!-- if n = 1 -> 1 snipe -->
+    <!-- if n = 2 -> 2 snope -->
+    <li><%= pluralize(n, 'snipe','snope')%></li>
+  </ul>
+<% end %>
+<hr>
+
+<!-- cycle helper method -->
+<!-- cycle the values 5 -->
+<!-- results in red, green, blue, red, green -->
+<h2>cycle</h2>
+<% 5.times do %>
+  <%= cycle('red','green', 'blue')%> <br/>
+<% end %>

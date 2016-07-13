@@ -1,6 +1,6 @@
 class SubjectsController < ApplicationController
 
-  layout false
+  layout "admin"
   def index
     # Since this controller is managing the Subjects Model we can to Class method queries that we defined in our Subject model then store it in a instance variable which can be interpolated through the view
     @subjects = Subject.sorted
