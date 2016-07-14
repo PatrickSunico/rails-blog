@@ -48,11 +48,6 @@ Pages
 
 Sections
 * id (primary key)
-* visible (boolean)
-* content_type (string)
-* content (string)
-
-* id (primary key)
 * page_id (Foreign Key)
 * name (string)
 * position (string)

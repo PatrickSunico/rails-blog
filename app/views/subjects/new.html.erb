@@ -7,5 +7,9 @@
 
     <!-- the ":f" key is what the variable the partial will be using, while the "f" value is the value for the partial value -->
     <%= render(:partial => "subjects/partials/form", :locals => {:f => f}) %>
+
+    <div class="form-buttons">
+      <%= submit_tag("Create Subject")%>
+    </div>
   <% end %>
 </div>

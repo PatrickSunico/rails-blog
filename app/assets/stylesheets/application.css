@@ -9,7 +9,10 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
- *= require_tree .
+ * 1st load any css file inside of this directory, 2nd it loads the assets from the public folder, 3rd loads the admin.css file, then lastly load everything else
+
  *= require_self
+ *= require public
+ *= require admin
+ *= require_tree .
  */

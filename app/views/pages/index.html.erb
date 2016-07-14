@@ -3,12 +3,6 @@
 <% @page_title = "Pages" %>
 <div class="pages-index">
   <h2>Pages</h2>
-  <ul>
-    <li><h2><%= link_to("Subjects Page", {:controller => "subjects"}, :class => "subjects-link")%></h2></li>
-    <li><h2><%= link_to("Pages Page", {:controller => "pages"}, :class => "pages-link")%></h2></li>
-    <li><h2><%= link_to("Sections Page", {:controller => "sections"}, :class => "sections-link")%></h2></li>
-  </ul>
-
   <%= link_to("Add new Page", {:action => 'new'}, :class => 'action new') %>
   <table class="listing" summary = "Page list">
     <tr class="header">

@@ -4,24 +4,7 @@
     <meta charset="utf-8">
     <title>Simple CMS | <%= @page_title || "Admin" %></title>
     <!-- style for for our custom helper inside of the application_helper.erb -->
-    <style>
-      span.status {
-        display:block;
-        width: 10px;
-        height: 10px;
-        margin: 0.25em auto;
-        padding: 0;
-        border: 1px solid #000000;
-      }
-      span.status.true {
-        background: green;
-        color: green;
-      }
-      span.status.false {
-        background: red;
-        color: red;
-      }
-    </style>
+    <%= stylesheet_link_tag('application', :media => 'all')%>
   </head>
   <body>
     <div id="header">
