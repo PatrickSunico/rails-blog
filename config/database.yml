@@ -13,8 +13,8 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: simple_cms
-  password: tuborg
+  username: root
+  password: Tuborg93
   socket: /tmp/mysql.sock
 
 development:
