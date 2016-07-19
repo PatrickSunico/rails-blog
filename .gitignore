@@ -1,5 +1,5 @@
 *.rbc
-*.yml
+/config/*.yml
 capybara-*.html
 .rspec
 /log
