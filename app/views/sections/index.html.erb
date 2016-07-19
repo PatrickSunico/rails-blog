@@ -2,14 +2,16 @@
 <!-- if the flash notice is not blank, then out the div and the notice -->
 <% @page_title = "Sections" %>
 
-<div class="sections-index">
+<div class="section index">
   <h2>Sections</h2>
-  <%= link_to("Add new Section", {:action => 'new'}, :class => 'action new') %>
+  <div><%= pluralize(@sections.size, 'section') %></div>
+  <%= link_to(image_tag('plus_sign.png', :size => '11x11', :alt => '+') + "Add new Section", {:action => 'new'}, :class => 'action new') %>
+
   <table class="listing" summary = "Page list">
     <tr class="header">
       <th>Section Id</th>
-      <th>Page Id(FK)</th>
-      <th>Page Name</th>
+      <th>Page</th>
+      <th>Section Name</th>
       <th>Position</th>
       <th>Visible</th>
       <th>Content type</th>
@@ -18,17 +20,15 @@
     </tr>
 
   <% @sections.each do |section| %>
-  <tr>
+  <tr class="<%=cycle('odd','even')%>">
 
     <td><%= section.id %></td>
-    <td><%= section.page_id %></td>
+    <td><%= section.page_id%></td>
     <td><%= section.name %></td>
     <td><%= section.position %></td>
     <td class="center"><%= status_tag(section.visible)%></td>
     <td><%= section.content_type %></td>
     <td><%= section.content %></td>
-
-
 
     <!-- defines the number of subjects in the pages table -->
     <td class="actions">

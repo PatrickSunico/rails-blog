@@ -1,5 +1,8 @@
 class AdminUser < ActiveRecord::Base
 
+  # Enables password authentication inside our AdminUsers Model
+  has_secure_password
+
   # To configure a different table name
   #self.table_name = "admin_users"
   has_and_belongs_to_many :pages

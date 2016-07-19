@@ -1,0 +1,16 @@
+<!-- Shared templates through out all the controllers -->
+<!-- if it has an object and the object has numerous errors that is greater than 0 -->
+<!-- In summary if the object in size of errors are greater than zero display this div as an error message -->
+<% if object && object.errors.size > 0 %>
+  <div id="errorExplanation">
+    <!-- pluralize(n0 = singular, n1 = singular n2 = plural, "error = singular, errors = plural" ) -->
+    <h2><%=pluralize(object.errors.size, "error")%> prohibited this record from being saved</h2>
+    <p>There were problems with the following fields</p>
+    <ul>
+      <!-- list each error from the objects attribute types in full messages -->
+      <% object.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

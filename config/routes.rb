@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
   # root route
   root 'subjects#index'
+  # If admin route to access/#index action
+  get 'admin', :to => "access#index"
 
   # Automatically inserts default action if not specified inside our demo_controller
   # matches a controller/action/id based on the URL parameters we specify in the browser and rails automatically determines which action to perform whether it is a get request or a post request

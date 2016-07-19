@@ -1,0 +1,15 @@
+<% @page_title = "Admin Menu" %>
+<div class="menu">
+  <h2>Admin Menu</h2>
+
+  <div class="identity">Logged in as: <%= session[:username] %></div>
+  <ul>
+    <!-- specify which link path the user can go to, In this case we want to go to subjects/index since index is a root route we can just call the controller /subjects -->
+    <li><%= link_to("Manage Subjects", :controller => "subjects")%></li>
+    <li><%=link_to("Manage Pages", :controller => "pages")%></li>
+    <li><%=link_to("Manage Sections", :controller => "sections")%></li>
+
+    <li><%=link_to("Manage Admin Users",'#')%></li>
+    <li><%= link_to("Logout", :action => 'logout')%></li>
+  </ul>
+</div>

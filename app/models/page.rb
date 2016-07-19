@@ -5,6 +5,11 @@ class Page < ActiveRecord::Base
   has_and_belongs_to_many :editors, :class_name => "AdminUser"
   has_many :sections
 
+  # Validation Requirements
+  validates_presence_of :name, :subject_id, :position
+  validates :permalink, presence: true, length: {minimum: 3, maximum: 50}
+
+
   scope :visible, lambda{ where(:visible => true)}
   scope :invisible, lambda {where(:visible => false)}
 

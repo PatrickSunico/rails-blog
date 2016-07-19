@@ -3,6 +3,11 @@ class Section < ActiveRecord::Base
   has_many :editors, :through => :section_edits, :class_name => "AdminUser"
   belongs_to :pages
 
+  # Validation Requirements
+  validates_presence_of :page_id, :position, :content_type, :name
+  validates :content, presence: true, length: {minimum: 3}
+
+
   scope :visible, lambda{ where(:visible => true)}
   scope :invisible, lambda {where(:visible => false)}
 

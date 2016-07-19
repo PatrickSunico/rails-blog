@@ -1,0 +1,24 @@
+<% @page_title = "Admin Login"%>
+<div class="login">
+  <!-- On Submit, Submit the values through our attempt_login action -->
+  <%= form_tag(:action => "attempt_login") do%>
+    <table>
+      <tr>
+        <td><%= label_tag(:username) %></td>
+        <td><%= text_field_tag(:username)%></td>
+      </tr>
+
+      <tr>
+        <!-- password as a virtual attribute type that get encrypted with blowfish -->
+        <td> <%= label_tag(:password)%> </td>
+        <td><%= password_field_tag(:password)%></td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+        <td><%= submit_tag("Log in")%></td>
+      </tr>
+
+    </table>
+  <% end %>
+</div>

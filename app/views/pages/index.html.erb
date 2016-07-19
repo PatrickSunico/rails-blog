@@ -1,13 +1,16 @@
 
 <!-- if the flash notice is not blank, then out the div and the notice -->
 <% @page_title = "Pages" %>
-<div class="pages-index">
+<div class="pages index">
   <h2>Pages</h2>
-  <%= link_to("Add new Page", {:action => 'new'}, :class => 'action new') %>
+  <%= link_to(image_tag('plus_sign.png', :size => '11x11', :alt => '+' ) + "Add new Page", {:action => 'new'}, :class => 'action new') %>
+  <!-- Displays all of the pages available -->
+  <div><%= pluralize(@pages.size, 'page')%> found</div>
+
   <table class="listing" summary = "Page list">
     <tr class="header">
       <th>Page Id</th>
-      <th>Subject Id(FK)</th>
+      <th>Subject</th>
       <th>Page Name</th>
       <th>Permalink</th>
       <th>Position</th>
@@ -15,12 +18,10 @@
       <th>Number of Sections</th>
       <th>Action</th>
     </tr>
-
   <% @pages.each do |page| %>
-  <tr>
-
+  <tr class="<%=cycle('odd','even')%>">
     <td><%= page.id %></td>
-    <td><%= page.subject_id%></td>
+    <td><%= page.subject.name if page.subject.name%></td>
     <td><%= page.name %></td>
     <td><%= page.permalink %></td>
     <td><%= page.position %></td>

@@ -1,7 +1,10 @@
 class Subject < ActiveRecord::Base
 
-  # Subject has many Pages where :page refers to the Page model
+  # Subject has many Pages where :pages refers to the Page table
   has_many :pages
+
+  # Validation Requirements
+  validates_presence_of :name, :position, :created_at
 
   # Custom Class Query Methods
 
