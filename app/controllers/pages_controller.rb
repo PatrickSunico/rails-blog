@@ -1,7 +1,6 @@
 class PagesController < ApplicationController
   layout "admin"
   before_action :confirm_logged_in
-
   def index
     @pages = Page.sorted
   end
@@ -12,7 +11,6 @@ class PagesController < ApplicationController
 
   def new
     @page = Page.new()
-    # @page = Page.new({:name => "Write a Title"})
     # Increment + 1 if user makes a new page
     @page_count = Page.count + 1
     # Access an instance of Subjects, To be passed through our edit template then can be accessed by our partial
@@ -20,7 +18,7 @@ class PagesController < ApplicationController
   end
 
   def create
-    if params[:page].present?
+    if params[:page].present? # are values present? if yes continue
       @page = Page.new(page_params)
       if @page.save
         flash[:notice] = "Page Created Successfully"
