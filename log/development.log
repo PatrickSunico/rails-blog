@@ -22300,3 +22300,1413 @@ Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/footer_gradient.png" for ::1 at 2016-07-19 18:09:28 +0800
+
+
+Started GET "/" for ::1 at 2016-07-19 20:08:16 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by SubjectsController#index as HTML
+Redirected to http://localhost:3000/access/login
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2016-07-19 20:08:16 +0800
+Processing by AccessController#login as HTML
+  Rendered access/login.html.erb within layouts/admin (2.0ms)
+Completed 200 OK in 144ms (Views: 143.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-19 20:08:16 +0800
+Processing by SubjectsController#index as HTML
+Redirected to http://localhost:3000/access/login
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2016-07-19 20:08:16 +0800
+Processing by AccessController#login as HTML
+  Rendered access/login.html.erb within layouts/admin (0.6ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/footer_gradient.png" for ::1 at 2016-07-19 20:08:17 +0800
+
+
+Started POST "/access/attempt_login" for ::1 at 2016-07-19 20:08:18 +0800
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pP5zmcPCdqBaHHMzg8rp40TAmHgIqrv2dDhZJ2UV2SB/awiig6S8s8kKEE1rnlvk1ErvK/s1sziJq5/M+NBSHg==", "username"=>"", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Redirected to http://localhost:3000/access/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2016-07-19 20:08:18 +0800
+Processing by AccessController#login as HTML
+  Rendered access/login.html.erb within layouts/admin (0.7ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/access/attempt_login" for ::1 at 2016-07-19 20:08:19 +0800
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d/D5xpQc/hI1im7HDp2Ct+OgOPjOzdtA7vE730sbySesZYL91Ho0AaacDbnmyTCwcypPqz1S044TYv001t5CGQ==", "username"=>"", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Redirected to http://localhost:3000/access/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2016-07-19 20:08:19 +0800
+Processing by AccessController#login as HTML
+  Rendered access/login.html.erb within layouts/admin (0.6ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/access/attempt_login" for ::1 at 2016-07-19 20:08:27 +0800
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r/d9OSfCaxXaEqpM72gomNe58kh7gVC1rnzbo8B3NUJ0YgYCZ6ShBkkEyTIHPJqfRzOFG4geWHtT7x1IXbK+fA==", "username"=>"PS", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT  `admin_users`.* FROM `admin_users` WHERE `admin_users`.`username` = 'PS'  ORDER BY `admin_users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 74ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/admin" for ::1 at 2016-07-19 20:08:27 +0800
+Processing by AccessController#index as HTML
+  Rendered access/index.html.erb within layouts/admin (1.5ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/access/logout" for ::1 at 2016-07-19 20:08:29 +0800
+Processing by AccessController#logout as HTML
+Redirected to http://localhost:3000/access/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2016-07-19 20:08:29 +0800
+Processing by AccessController#login as HTML
+  Rendered access/login.html.erb within layouts/admin (1.1ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/access/attempt_login" for ::1 at 2016-07-19 20:09:03 +0800
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mVcn65xWv2yvmne6+hFfsZNSGHiTCmvOvb3GavczpatCwlzQ3DB1fzyMFMQSRe22A9hvK2CVYwBALgCBavYulQ==", "username"=>"", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Redirected to http://localhost:3000/access/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2016-07-19 20:09:03 +0800
+Processing by AccessController#login as HTML
+  Rendered access/login.html.erb within layouts/admin (0.8ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/access/attempt_login" for ::1 at 2016-07-19 20:09:03 +0800
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YF1DHMHMqoBlOrmeiw+O+yhKgtqUfDNWWsY0/ddXWcG7yDgngapgk/Ys2uBjWzz8uMD1iWfjO5inVfIWSpLS/w==", "username"=>"", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Redirected to http://localhost:3000/access/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2016-07-19 20:09:03 +0800
+Processing by AccessController#login as HTML
+  Rendered access/login.html.erb within layouts/admin (1.0ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-19 20:33:04 +0800
+Processing by SubjectsController#index as HTML
+Redirected to http://localhost:3000/access/login
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2016-07-19 20:33:04 +0800
+Processing by AccessController#login as HTML
+  Rendered access/login.html.erb within layouts/admin (0.9ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/footer_gradient.png" for ::1 at 2016-07-19 20:33:04 +0800
+
+
+Started POST "/access/attempt_login" for ::1 at 2016-07-19 20:33:06 +0800
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"awX42xE6VzUzSvzOLl1Opj5QsaGHdco3BVlDa3WUshawkIPgUVydJqBcn7DGCfyhrtrG8nTqwvn4yoWA6FE5KA==", "username"=>"", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Redirected to http://localhost:3000/access/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2016-07-19 20:33:06 +0800
+Processing by AccessController#login as HTML
+  Rendered access/login.html.erb within layouts/admin (0.7ms)
+Completed 200 OK in 8ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/access/attempt_login" for ::1 at 2016-07-19 20:33:07 +0800
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lba/Lcwja8IR5odhWEBlNvxeQAasOFSHmwjTjinCUGL2I8QWjEWh0YLw5B+wFNcxbNQ3VV+nXElmmxVltAfbXA==", "username"=>"", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Redirected to http://localhost:3000/access/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2016-07-19 20:33:07 +0800
+Processing by AccessController#login as HTML
+  Rendered access/login.html.erb within layouts/admin (0.7ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/access/attempt_login" for ::1 at 2016-07-19 20:33:12 +0800
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d/lNSE9SSyrLRfyj99tUWjgrZdOZLR0HUK8+Er5R5ousbDZzDzSBOVhTn90fj+ZdqKESgGqyFcmtPPj5I5RttQ==", "username"=>"PS", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT  `admin_users`.* FROM `admin_users` WHERE `admin_users`.`username` = 'PS'  ORDER BY `admin_users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 63ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/admin" for ::1 at 2016-07-19 20:33:13 +0800
+Processing by AccessController#index as HTML
+  Rendered access/index.html.erb within layouts/admin (0.6ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-19 20:33:14 +0800
+Processing by SubjectsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `subjects`
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT `subjects`.* FROM `subjects`  ORDER BY subjects.position ASC[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 6[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 7
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 8[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 9
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 10[0m
+  Rendered subjects/index.html.erb within layouts/admin (44.6ms)
+Completed 200 OK in 67ms (Views: 55.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/subjects/new" for ::1 at 2016-07-19 20:33:15 +0800
+Processing by SubjectsController#new as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `subjects`
+  Rendered application/_error_messages.html.erb (0.6ms)
+  Rendered subjects/partials/_form.html.erb (21.1ms)
+  Rendered subjects/new.html.erb within layouts/admin (26.9ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/subjects/create" for ::1 at 2016-07-19 20:33:19 +0800
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GEvHlZ43bHV1roQY84bXCgH8OTY/pzxcOt5omOUhBrjD3ryu3lGmZua452Yb0mUNkXZOZcw4NJLHTa5zeOSNhg==", "subject"=>{"name"=>"", "position"=>"", "visible"=>"0", "created_at(3i)"=>"", "created_at(2i)"=>"", "created_at(1i)"=>""}, "commit"=>"Create Subject"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+  Rendered application/_error_messages.html.erb (0.8ms)
+  Rendered subjects/partials/_form.html.erb (3.1ms)
+  Rendered subjects/new.html.erb within layouts/admin (4.3ms)
+Completed 200 OK in 27ms (Views: 11.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-07-19 20:33:32 +0800
+Processing by SubjectsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `subjects`
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT `subjects`.* FROM `subjects`  ORDER BY subjects.position ASC[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 6[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 7
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 8[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 9
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 10[0m
+  Rendered subjects/index.html.erb within layouts/admin (17.5ms)
+Completed 200 OK in 27ms (Views: 22.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/subjects/delete/10" for ::1 at 2016-07-19 20:33:34 +0800
+Processing by SubjectsController#delete as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mSubject Load (0.3ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 10 LIMIT 1
+  Rendered subjects/delete.html.erb within layouts/admin (0.9ms)
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/subjects/destroy/10" for ::1 at 2016-07-19 20:33:35 +0800
+Processing by SubjectsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R+G98u5MjTZiFGsG6uQl5ZApbMwPbkhY+lMVkkblinScdMbJripHJfECCHgCsJfiAKMbn/zxQJYHwNN52yABSg==", "commit"=>"Delete Subject", "id"=>"10"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `name' for nil:NilClass:
+  app/controllers/subjects_controller.rb:90:in `destroy'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/b3e6aec73e6607fa/variables" for ::1 at 2016-07-19 20:33:35 +0800
+
+
+Started POST "/subjects/destroy/10" for ::1 at 2016-07-19 20:34:30 +0800
+Processing by SubjectsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R+G98u5MjTZiFGsG6uQl5ZApbMwPbkhY+lMVkkblinScdMbJripHJfECCHgCsJfiAKMbn/zxQJYHwNN52yABSg==", "commit"=>"Delete Subject", "id"=>"10"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 10 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (6.2ms)[0m  [1mDELETE FROM `subjects` WHERE `subjects`.`id` = 10[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/" for ::1 at 2016-07-19 20:34:30 +0800
+Processing by SubjectsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects`  ORDER BY subjects.position ASC
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 6
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 7[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 8
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 9[0m
+  Rendered subjects/index.html.erb within layouts/admin (15.2ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/subjects/delete/9" for ::1 at 2016-07-19 20:34:32 +0800
+Processing by SubjectsController#delete as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 9 LIMIT 1
+  Rendered subjects/delete.html.erb within layouts/admin (0.5ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/subjects/destroy/9" for ::1 at 2016-07-19 20:34:33 +0800
+Processing by SubjectsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a2MhrO0XizwiQxLBw0YxRA4OR+GYMstbUzhxoa8ZaAGw9lqXrXFBL7FVcb8rEoNDnoQwsmutw5Wuq7dKMtzjPw==", "commit"=>"Delete Subject", "id"=>"9"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 9 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `subjects` WHERE `subjects`.`id` = 9[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-07-19 20:34:33 +0800
+Processing by SubjectsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects`  ORDER BY subjects.position ASC
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 6
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 7[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 8
+  Rendered subjects/index.html.erb within layouts/admin (8.3ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/subjects/new" for ::1 at 2016-07-19 20:38:01 +0800
+Processing by SubjectsController#new as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+  Rendered application/_error_messages.html.erb (0.0ms)
+  Rendered subjects/partials/_form.html.erb (1.9ms)
+  Rendered subjects/new.html.erb within layouts/admin (3.2ms)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/subjects/create" for ::1 at 2016-07-19 20:38:15 +0800
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YlOHyZMbm4JL3hScSykEGV3CjYR/lCZjpWsSdANGNO+5xvzy031RkdjId+KjfbYezUj614wLLq1Y+NSfnoO/0Q==", "subject"=>{"name"=>"New Subject 420", "position"=>"7", "visible"=>"1", "created_at(3i)"=>"8", "created_at(2i)"=>"9", "created_at(1i)"=>"2012"}, "commit"=>"Create Subject"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `subjects` (`name`, `position`, `visible`, `created_at`, `updated_at`) VALUES ('New Subject 420', 7, 1, '2012-09-08 00:00:00', '2016-07-19 12:38:15')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-07-19 20:38:15 +0800
+Processing by SubjectsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects`  ORDER BY subjects.position ASC
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 6
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 7[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 8
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 11[0m
+  Rendered subjects/index.html.erb within layouts/admin (15.2ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/subjects/delete/11" for ::1 at 2016-07-19 20:38:18 +0800
+Processing by SubjectsController#delete as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 11 LIMIT 1
+  Rendered subjects/delete.html.erb within layouts/admin (0.5ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/subjects/destroy/11" for ::1 at 2016-07-19 20:38:20 +0800
+Processing by SubjectsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HKFxz7WQYU3IMMBMVP2wNGa/RjjtyggbX/l+2nGmbCDHNAr09farXlsmozK8qQIz9jUxax5VANWiargx7GPnHg==", "commit"=>"Delete Subject", "id"=>"11"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 11 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM `subjects` WHERE `subjects`.`id` = 11[0m
+  [1m[35m (5.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/" for ::1 at 2016-07-19 20:38:20 +0800
+Processing by SubjectsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects`  ORDER BY subjects.position ASC
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 6
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 7[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 8
+  Rendered subjects/index.html.erb within layouts/admin (8.4ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/subjects/edit/8" for ::1 at 2016-07-19 20:38:21 +0800
+Processing by SubjectsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `subjects`
+  Rendered application/_error_messages.html.erb (0.0ms)
+  Rendered subjects/partials/_form.html.erb (2.9ms)
+  Rendered subjects/edit.html.erb within layouts/admin (4.7ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/subjects/update/8" for ::1 at 2016-07-19 20:38:23 +0800
+Processing by SubjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OzsPnTWbUs6ZKIuiCCqlrIspQWh8ksbGT9/ryhtwdyzgrnSmdf2Y3Qo+6NzgfherG6M2O48NzgiyTC0hhrX8Eg==", "subject"=>{"name"=>"New Subjectv ", "position"=>"6", "visible"=>"1", "created_at(3i)"=>"20", "created_at(2i)"=>"5", "created_at(1i)"=>"2015"}, "commit"=>"Update Subject", "id"=>"8"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE `subjects` SET `name` = 'New Subjectv ', `updated_at` = '2016-07-19 12:38:23' WHERE `subjects`.`id` = 8[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/subjects/show/8
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/subjects/show/8" for ::1 at 2016-07-19 20:38:23 +0800
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 8 LIMIT 1[0m
+  Rendered subjects/show.html.erb within layouts/admin (0.7ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-07-19 20:38:25 +0800
+Processing by SubjectsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `subjects`
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects`  ORDER BY subjects.position ASC[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 6[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 7
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 8[0m
+  Rendered subjects/index.html.erb within layouts/admin (8.2ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/subjects/new" for ::1 at 2016-07-19 20:44:39 +0800
+Processing by SubjectsController#new as HTML
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing - param is missing or the value is empty: subject:
+  actionpack (4.2.6) lib/action_controller/metal/strong_parameters.rb:251:in `require'
+  app/controllers/subjects_controller.rb:91:in `subject_params'
+  app/controllers/subjects_controller.rb:82:in `new_subject'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:145:in `block in halting_and_conditional'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/858e7ff3f8d85411/variables" for ::1 at 2016-07-19 20:44:39 +0800
+
+
+Started POST "/__better_errors/858e7ff3f8d85411/variables" for ::1 at 2016-07-19 20:44:40 +0800
+
+
+Started GET "/" for ::1 at 2016-07-19 20:45:23 +0800
+Processing by SubjectsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `subjects`
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT `subjects`.* FROM `subjects`  ORDER BY subjects.position ASC[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 6[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 7
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 8[0m
+  Rendered subjects/index.html.erb within layouts/admin (16.5ms)
+Completed 200 OK in 27ms (Views: 23.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/subjects/new" for ::1 at 2016-07-19 20:45:24 +0800
+Processing by SubjectsController#new as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing - param is missing or the value is empty: subject:
+  actionpack (4.2.6) lib/action_controller/metal/strong_parameters.rb:251:in `require'
+  app/controllers/subjects_controller.rb:87:in `subject_params'
+  app/controllers/subjects_controller.rb:16:in `new'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/1963b2e7f91d7a58/variables" for ::1 at 2016-07-19 20:45:24 +0800
+
+
+Started GET "/subjects/new" for ::1 at 2016-07-19 20:45:37 +0800
+Processing by SubjectsController#new as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `subjects`
+  Rendered application/_error_messages.html.erb (0.0ms)
+  Rendered subjects/partials/_form.html.erb (2.0ms)
+  Rendered subjects/new.html.erb within layouts/admin (3.3ms)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/subjects/create" for ::1 at 2016-07-19 20:45:39 +0800
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JmNtLEH1//Cns84ZFBPbhjtIXWWU/UvmT55XwFl2hzD99hYXAZM14zSlrWf8R2mBq8IqNmdiQyiyDZErxLMMDg==", "subject"=>{"name"=>"", "position"=>"", "visible"=>"0", "created_at(3i)"=>"", "created_at(2i)"=>"", "created_at(1i)"=>""}, "commit"=>"Create Subject"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+  Rendered application/_error_messages.html.erb (0.8ms)
+  Rendered subjects/partials/_form.html.erb (2.8ms)
+  Rendered subjects/new.html.erb within layouts/admin (4.0ms)
+Completed 200 OK in 22ms (Views: 16.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/subjects" for ::1 at 2016-07-19 20:49:31 +0800
+Processing by SubjectsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `subjects`
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects`  ORDER BY subjects.position ASC[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 6[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 7
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 8[0m
+  Rendered subjects/index.html.erb within layouts/admin (18.6ms)
+Completed 200 OK in 29ms (Views: 23.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/footer_gradient.png" for ::1 at 2016-07-19 20:49:31 +0800
+
+
+Started GET "/pages" for ::1 at 2016-07-19 20:49:32 +0800
+Processing by PagesController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `pages`
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages`  ORDER BY pages.position ASC[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 1[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 7[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 9[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 10[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 11[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 2[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 3[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 4[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 8[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 6[0m
+  Rendered pages/index.html.erb within layouts/admin (28.3ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/footer_gradient.png" for ::1 at 2016-07-19 20:49:33 +0800
+
+
+Started GET "/pages/new" for ::1 at 2016-07-19 20:49:34 +0800
+Processing by PagesController#new as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing - param is missing or the value is empty: page:
+  actionpack (4.2.6) lib/action_controller/metal/strong_parameters.rb:251:in `require'
+  app/controllers/pages_controller.rb:95:in `page_params'
+  app/controllers/pages_controller.rb:14:in `new'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/45a3397258b3fc00/variables" for ::1 at 2016-07-19 20:49:34 +0800
+
+
+Started GET "/pages/new" for ::1 at 2016-07-19 20:49:55 +0800
+Processing by PagesController#new as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages`
+  Rendered application/_error_messages.html.erb (0.0ms)
+  [1m[36mSubject Load (0.3ms)[0m  [1mSELECT `subjects`.* FROM `subjects`  ORDER BY position ASC[0m
+  Rendered pages/partials/_form.html.erb (5.7ms)
+  Rendered pages/new.html.erb within layouts/admin (8.0ms)
+Completed 200 OK in 29ms (Views: 21.8ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/pages/create" for ::1 at 2016-07-19 20:49:58 +0800
+Processing by PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BDB4qEbymJdRizULRogsZxB4JlEbDq4ymyLQgDyaU1XfpQOTBpRShMKdVnWu3J5ggPJRAuiRpvxmsRZroV/Yaw==", "page"=>{"subject_id"=>"1", "name"=>"", "permalink"=>"", "position"=>"", "visible"=>"0"}, "commit"=>"Create Page"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages`
+  Rendered application/_error_messages.html.erb (6.9ms)
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects`  ORDER BY position ASC[0m
+  Rendered pages/partials/_form.html.erb (9.5ms)
+  Rendered pages/new.html.erb within layouts/admin (10.7ms)
+Completed 200 OK in 25ms (Views: 18.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/pages/create" for ::1 at 2016-07-19 20:50:11 +0800
+Processing by PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xD19XzTHbcUXxi+pN+idnLdIiyEumMUdAFbxp7oVpb4fqAZkdKGn1oTQTNffvC+bJ8L8ct0HzdP9xTdMJ9AugA==", "page"=>{"subject_id"=>"1", "name"=>"Something", "permalink"=>"something", "position"=>"11", "visible"=>"1"}, "commit"=>"Create Page"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `pages` (`subject_id`, `name`, `permalink`, `position`, `visible`, `created_at`, `updated_at`) VALUES (1, 'Something', 'something', 11, 1, '2016-07-19 12:50:11', '2016-07-19 12:50:11')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/pages
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/pages" for ::1 at 2016-07-19 20:50:11 +0800
+Processing by PagesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages`[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages`  ORDER BY pages.position ASC
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 1
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 7
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 9
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 10
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 11
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 2
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 3
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 4
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 8
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 6
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 12
+  Rendered pages/index.html.erb within layouts/admin (24.3ms)
+Completed 200 OK in 33ms (Views: 29.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/pages/delete/1" for ::1 at 2016-07-19 20:51:02 +0800
+Processing by PagesController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPage Load (0.1ms)[0m  [1mSELECT  `pages`.* FROM `pages` WHERE `pages`.`id` = 1 LIMIT 1[0m
+  Rendered pages/delete.html.erb within layouts/admin (1.5ms)
+Completed 200 OK in 28ms (Views: 19.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/pages/destroy/1" for ::1 at 2016-07-19 20:51:03 +0800
+Processing by PagesController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TdPWH+eMp0la+4XpfJtTDBycPCLv6ZJjzJ1JvzDnRDmWRq0kp+ptWsnt5peUz+ELjBZLcRx2mq0xDo9UrSLPBw==", "commit"=>"Delete Page", "id"=>"1"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT  `pages`.* FROM `pages` WHERE `pages`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  DELETE FROM `admin_users_pages` WHERE `admin_users_pages`.`page_id` = 1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `pages` WHERE `pages`.`id` = 1[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/pages
+Completed 302 Found in 23ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/pages" for ::1 at 2016-07-19 20:51:03 +0800
+Processing by PagesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages`[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages`  ORDER BY pages.position ASC
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 7
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 9
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 10
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 11
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 2
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 3
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 4
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 8
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 6
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 12
+  Rendered pages/index.html.erb within layouts/admin (33.0ms)
+Completed 200 OK in 44ms (Views: 40.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/pages/delete/7" for ::1 at 2016-07-19 20:59:21 +0800
+Processing by PagesController#delete as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT  `pages`.* FROM `pages` WHERE `pages`.`id` = 7 LIMIT 1[0m
+  Rendered pages/delete.html.erb within layouts/admin (0.8ms)
+Completed 200 OK in 28ms (Views: 18.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/pages/destroy/7" for ::1 at 2016-07-19 20:59:22 +0800
+Processing by PagesController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GckK+CEmPp6Vez9d2QW0EsVQYcuY8Rtj9kUopA9paUjCXHHDYUD0jQZtXCMxUQYVVdoWmGtuE60L1u5Pkqzidg==", "commit"=>"Delete Page", "id"=>"7"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT  `pages`.* FROM `pages` WHERE `pages`.`id` = 7 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM `admin_users_pages` WHERE `admin_users_pages`.`page_id` = 7
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM `pages` WHERE `pages`.`id` = 7[0m
+  [1m[35m (5.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/pages
+Completed 302 Found in 13ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/pages" for ::1 at 2016-07-19 20:59:22 +0800
+Processing by PagesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages`[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages`  ORDER BY pages.position ASC
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 9
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 10
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 11
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 2
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 3
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 4
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 8
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 6
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 12
+  Rendered pages/index.html.erb within layouts/admin (24.4ms)
+Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/sections" for ::1 at 2016-07-19 20:59:26 +0800
+Processing by SectionsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `sections`[0m
+  [1m[35mSection Load (0.2ms)[0m  SELECT `sections`.* FROM `sections`  ORDER BY sections.position ASC
+  Rendered sections/index.html.erb within layouts/admin (7.6ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/footer_gradient.png" for ::1 at 2016-07-19 20:59:26 +0800
+
+
+Started GET "/sections/delete/6" for ::1 at 2016-07-19 20:59:28 +0800
+Processing by SectionsController#delete as HTML
+  Parameters: {"id"=>"6"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `find_section' for #<SectionsController:0x007f952ff79a10>
+Did you mean?  send_action:
+  activesupport (4.2.6) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:145:in `block in halting_and_conditional'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/692cdfa340a524c0/variables" for ::1 at 2016-07-19 20:59:28 +0800
+
+
+Started GET "/sections/delete/6" for ::1 at 2016-07-19 21:00:30 +0800
+Processing by SectionsController#delete as HTML
+  Parameters: {"id"=>"6"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.6ms)
+
+ArgumentError - When assigning attributes, you must pass a hash as an argument.:
+  activerecord (4.2.6) lib/active_record/attribute_assignment.rb:25:in `assign_attributes'
+  activerecord (4.2.6) lib/active_record/core.rb:566:in `init_attributes'
+  activerecord (4.2.6) lib/active_record/core.rb:281:in `initialize'
+  activerecord (4.2.6) lib/active_record/inheritance.rb:61:in `new'
+  app/controllers/sections_controller.rb:82:in `find_section'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:145:in `block in halting_and_conditional'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/Patrick/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/1b02f084a8d87da1/variables" for ::1 at 2016-07-19 21:00:30 +0800
+
+
+Started GET "/sections/delete/6" for ::1 at 2016-07-19 21:00:55 +0800
+Processing by SectionsController#delete as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSection Load (0.2ms)[0m  [1mSELECT  `sections`.* FROM `sections` WHERE `sections`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `sections`.* FROM `sections` WHERE `sections`.`id` = 6 LIMIT 1  [["id", "6"]]
+  Rendered sections/delete.html.erb within layouts/admin (1.1ms)
+Completed 200 OK in 18ms (Views: 11.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/sections/destroy/6" for ::1 at 2016-07-19 21:00:57 +0800
+Processing by SectionsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WJ7Kkb7WPR1ETAjbHJveTEWVIn1inZn0g7RWg8VsLCyDC7Gq/rD3Dtdaa6X0z2xL1R9VLpECkTp+J5BoWKmnEg==", "commit"=>"Delete Section", "id"=>"6"}
+  [1m[36mSection Load (0.2ms)[0m  [1mSELECT  `sections`.* FROM `sections` WHERE `sections`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `sections` WHERE `sections`.`id` = 6[0m
+  [1m[35m (1.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/sections
+Completed 302 Found in 4ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/sections" for ::1 at 2016-07-19 21:00:57 +0800
+Processing by SectionsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `sections`[0m
+  [1m[35mSection Load (0.2ms)[0m  SELECT `sections`.* FROM `sections`  ORDER BY sections.position ASC
+  Rendered sections/index.html.erb within layouts/admin (2.4ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sections" for ::1 at 2016-07-19 21:02:32 +0800
+Processing by SectionsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections`[0m
+  [1m[35mSection Load (0.1ms)[0m  SELECT `sections`.* FROM `sections`  ORDER BY sections.position ASC
+  Rendered sections/index.html.erb within layouts/admin (5.9ms)
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sections/new" for ::1 at 2016-07-19 21:02:33 +0800
+Processing by SectionsController#new as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `sections`[0m
+  Rendered application/_error_messages.html.erb (0.0ms)
+  [1m[35mPage Load (0.3ms)[0m  SELECT `pages`.* FROM `pages`  ORDER BY position ASC
+  Rendered sections/partials/_form.html.erb (7.9ms)
+  Rendered sections/new.html.erb within layouts/admin (10.1ms)
+Completed 200 OK in 27ms (Views: 21.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/sections/create" for ::1 at 2016-07-19 21:02:44 +0800
+Processing by SectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Br/UUMp3KTQhwLwMEl9GIwTzJpdhCpAbvp1RLMYH4HfdKq9rihHjJ7LW33L6C/QklHlRxJKVmNVDDpfHW8JrSQ==", "section"=>{"page_id"=>"10", "name"=>"New Section", "visible"=>"0", "position"=>"", "content"=>""}, "commit"=>"Create Section"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections`[0m
+  Rendered application/_error_messages.html.erb (0.9ms)
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages`  ORDER BY position ASC
+  Rendered sections/partials/_form.html.erb (3.2ms)
+  Rendered sections/new.html.erb within layouts/admin (4.4ms)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/sections/create" for ::1 at 2016-07-19 21:02:55 +0800
+Processing by SectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n3UYUndE/bJWXm/e1w2mJ0Y2rqN27Jd+fy6k499Fp8ZE4GNpNyI3ocVIDKA/WRQg1rzZ8IVzn7CCvWIIQoAs+A==", "section"=>{"page_id"=>"10", "name"=>"New Section", "visible"=>"1", "position"=>"2", "content_type"=>"HTML", "content"=>"Some Content"}, "commit"=>"Create Section"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `sections` (`page_id`, `name`, `position`, `visible`, `content_type`, `content`, `created_at`, `updated_at`) VALUES (10, 'New Section', 2, 1, 'HTML', 'Some Content', '2016-07-19 13:02:55', '2016-07-19 13:02:55')
+  [1m[36m (4.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/sections
+Completed 302 Found in 8ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/sections" for ::1 at 2016-07-19 21:02:55 +0800
+Processing by SectionsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `sections`
+  [1m[36mSection Load (0.2ms)[0m  [1mSELECT `sections`.* FROM `sections`  ORDER BY sections.position ASC[0m
+  Rendered sections/index.html.erb within layouts/admin (2.8ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/access/attempt_login" for ::1 at 2016-07-19 21:23:53 +0800
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d/lNSE9SSyrLRfyj99tUWjgrZdOZLR0HUK8+Er5R5ousbDZzDzSBOVhTn90fj+ZdqKESgGqyFcmtPPj5I5RttQ==", "username"=>"", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Redirected to http://localhost:3000/access/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2016-07-19 21:23:54 +0800
+Processing by AccessController#login as HTML
+  Rendered access/login.html.erb within layouts/admin (1.4ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/access/attempt_login" for ::1 at 2016-07-19 21:23:54 +0800
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qYV0TK3RQDsmTOqwOD2w0d2x/Onaud+HS5zhuFBBfg1yEA937beKKLVaic7QaQLWTTuLuikm10m2DydTzYT1Mw==", "username"=>"", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Redirected to http://localhost:3000/access/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2016-07-19 21:23:54 +0800
+Processing by AccessController#login as HTML
+  Rendered access/login.html.erb within layouts/admin (0.6ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/access/attempt_login" for ::1 at 2016-07-19 21:23:57 +0800
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0jFimflqXAXyRYrQX/zLhPmdsdFX7yMkPCDchT4vvLkJpBmiuQyWFmFT6a63qHmDaRfGgqRwK+rBsxpuo+o3hw==", "username"=>"fas", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT  `admin_users`.* FROM `admin_users` WHERE `admin_users`.`username` = 'fas'  ORDER BY `admin_users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/access/login
+Completed 302 Found in 13ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/access/login" for ::1 at 2016-07-19 21:23:57 +0800
+Processing by AccessController#login as HTML
+  Rendered access/login.html.erb within layouts/admin (0.7ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/access/attempt_login" for ::1 at 2016-07-19 21:24:10 +0800
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0vUK8HGijB37ZYdU4/if8+QjyfV1DXxo9JF/W376bhsJYHHLMcRGDmhz5CoLrC30dKm+poaSdKYJArmw4z/lJQ==", "username"=>"PS", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT  `admin_users`.* FROM `admin_users` WHERE `admin_users`.`username` = 'PS'  ORDER BY `admin_users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 61ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for ::1 at 2016-07-19 21:24:10 +0800
+Processing by AccessController#index as HTML
+  Rendered access/index.html.erb within layouts/admin (0.9ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sections" for ::1 at 2016-07-19 21:24:14 +0800
+Processing by SectionsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `sections`
+  [1m[36mSection Load (0.2ms)[0m  [1mSELECT `sections`.* FROM `sections`  ORDER BY sections.position ASC[0m
+  Rendered sections/index.html.erb within layouts/admin (9.1ms)
+Completed 200 OK in 29ms (Views: 18.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pages" for ::1 at 2016-07-19 21:24:17 +0800
+Processing by PagesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages`
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages`  ORDER BY pages.position ASC[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 9[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 10[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 11[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 2[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 3[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 4[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 8[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 6[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 12[0m
+  Rendered pages/index.html.erb within layouts/admin (32.2ms)
+Completed 200 OK in 49ms (Views: 38.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/admin" for ::1 at 2016-07-19 21:24:20 +0800
+Processing by AccessController#index as HTML
+  Rendered access/index.html.erb within layouts/admin (0.8ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/footer_gradient.png" for ::1 at 2016-07-19 21:24:21 +0800
+
+
+Started GET "/pages" for ::1 at 2016-07-19 21:24:24 +0800
+Processing by PagesController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `pages`
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages`  ORDER BY pages.position ASC[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 9[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 10[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 11[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 2[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 3[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1  [["id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 4[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 8[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 6[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 12[0m
+  Rendered pages/index.html.erb within layouts/admin (18.7ms)
+Completed 200 OK in 27ms (Views: 23.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/footer_gradient.png" for ::1 at 2016-07-19 21:24:24 +0800
+
+
+Started GET "/sections" for ::1 at 2016-07-19 21:24:28 +0800
+Processing by SectionsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `sections`
+  [1m[36mSection Load (0.2ms)[0m  [1mSELECT `sections`.* FROM `sections`  ORDER BY sections.position ASC[0m
+  Rendered sections/index.html.erb within layouts/admin (3.1ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/footer_gradient.png" for ::1 at 2016-07-19 21:24:29 +0800
+
+
+Started GET "/admin" for ::1 at 2016-07-19 21:24:33 +0800
+Processing by AccessController#index as HTML
+  Rendered access/index.html.erb within layouts/admin (0.6ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/footer_gradient.png" for ::1 at 2016-07-19 21:24:33 +0800
+
+
+Started GET "/access/logout" for ::1 at 2016-07-19 21:24:35 +0800
+Processing by AccessController#logout as HTML
+Redirected to http://localhost:3000/access/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2016-07-19 21:24:35 +0800
+Processing by AccessController#login as HTML
+  Rendered access/login.html.erb within layouts/admin (0.6ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)

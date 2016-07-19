@@ -1,12 +1,13 @@
 class SectionsController < ApplicationController
   layout "admin"
   before_action :confirm_logged_in
+  before_action :find_section, :only => [:show,:edit,:update,:delete,:destroy]
   def index
     @sections = Section.sorted
   end
 
   def show
-    @section = Section.find(params[:id])
+    # show a section by it's id from our defined before_action "section_find"
   end
 
   def new
@@ -38,13 +39,12 @@ class SectionsController < ApplicationController
   end
 
   def edit
-    @section = Section.find(params[:id])
     @pages = Page.order('position ASC')
     @section_count = Section.count
   end
 
   def update
-    @section = Section.find(params[:id])
+    #first find the section to update by using our defined before_action "find_section"
     if params[:section].present?
 
       if @section.update_attributes(section_parameters)
@@ -64,16 +64,21 @@ class SectionsController < ApplicationController
   end
 
   def delete
-    @section = Section.find(params[:id])
   end
 
   def destroy
-    @section = Section.find(params[:id]).destroy
-    flash[:notice] = "Successfully Deleted a section"
+
+    # @section = Section.find(params[:id]).destroy
+    section_name = @section.name
+    @section.destroy
+    flash[:notice] = "Successfully Deleted '#{section_name}'"
     redirect_to(:action => "index")
   end
 
   private
+    def find_section
+      @section = Section.find(params[:id])
+    end
     def section_parameters
       params.require(:section).permit(:page_id, :name, :position, :visible, :content_type, :content)
     end

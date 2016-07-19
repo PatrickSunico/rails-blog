@@ -1,16 +1,16 @@
 class PagesController < ApplicationController
   layout "admin"
   before_action :confirm_logged_in
+  before_action :find_page, :only => [:show, :edit, :update, :delete, :destroy]
   def index
     @pages = Page.sorted
   end
 
   def show
-    @page = Page.find(params[:id])
+    # @page = Page.find(params[:id])
   end
 
   def new
-    @page = Page.new()
     # Increment + 1 if user makes a new page
     @page_count = Page.count + 1
     # Access an instance of Subjects, To be passed through our edit template then can be accessed by our partial
@@ -40,17 +40,12 @@ class PagesController < ApplicationController
   end
 
   def edit
-    @page = Page.find(params[:id])
     # Access an instance of Subjects, To be passed through our edit template then can be accessed by our partial
     @subjects = Subject.order('position ASC')
     @page_count = Page.count
-
   end
 
   def update
-    # Find the page by it's ID first
-    @page = Page.find(params[:id])
-
     # check if page params has a value if so update the values
     if params[:page].present?
 
@@ -74,16 +69,19 @@ class PagesController < ApplicationController
   end
 
   def delete
-    @page = Page.find(params[:id])
   end
 
   def destroy
-    @page = Page.find(params[:id]).destroy
-    flash[:notice] = "Successfully Deleted a Page"
+    page_name = @page.name
+    @page.destroy
+    flash[:notice] = "Successfully Deleted '#{page_name}'"
     redirect_to(:action => "index")
   end
 
   private
+    def find_page
+      @page = Page.find(params[:id])
+    end
     def page_params
       params.require(:page).permit(:subject_id ,:name, :permalink, :position, :visible)
     end
